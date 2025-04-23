@@ -27,7 +27,10 @@ https://leetcode.com/problems/monotonic-array/
 from typing import List
 class Solution:
     def isMonotonic(self, nums: List[int]) -> bool:
-        
+        """
+        We have taken sorted arrays
+        both ascending and descending sorted because monotinic can be anything
+        """
         return True if sorted(nums)==nums or sorted(nums,reverse=True)==nums else False
 
         
