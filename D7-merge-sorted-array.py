@@ -49,7 +49,13 @@ class Solution:
         2. Combine these m elements with all the elements from nums2 to make a new temporary list.
         3. Sort this temporary list so all numbers are in order (smallest to largest).
         4. Copy the sorted numbers back into nums1, replacing everything in nums1 with these sorted numbers.
-        5. Check if there are any zeros in nums1 that shouldn’t be there and remove them (this step is only needed for some edge cases).
+        5. Check if there are any zeros in nums1 that shouldn’t be there and remove them 
+            (this step is only needed for some edge cases).
+        6. Logic of removing zeros is -> Any Zero which is followed by larger number is useful because
+            it can be part of the pattern whereas any zero which is followed by another number 
+            smaller than it is not useful for us (because we are sorting them in ascending order)
+            So order like ---> -2,-1,0,0,1 is fine 
+            whereas -2,-1,0,-3 is useless we can remove that zero
         """
         # Step 1 & 2: Take first m elements of nums1 and combine with nums2
         t = nums1[:len(nums1)-n] + nums2
@@ -65,3 +71,25 @@ class Solution:
 
 s = Solution()
 print(s.merge([-1,0,0,3,3,3,0,0,0], 6, [1,2,2], 3))
+
+
+
+"""
+Another Approach using STL
+
+1. Traverse through nums2 and append its elements to the end of nums1 starting from index m.
+2. Sort the entire nums1 array using sort() function.
+
+
+Complexity
+Time complexity: O((m+n)log(m+n)) -due to the sort() function
+
+Space complexity: O(1)
+We are not using any extra space, so the space complexity is O(1)
+
+"""
+class Solution(object):
+    def merge(self, nums1, m, nums2, n):
+      for j in range(n):
+          nums1[m+j] = nums2[j]
+      nums1.sort()
