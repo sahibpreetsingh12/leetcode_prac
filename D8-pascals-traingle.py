@@ -38,7 +38,6 @@ class Solution:
 """
 Simpler Solution - we need to work on recurrsion before moving further
 """
-
 from typing import List
 
 class Solution:
