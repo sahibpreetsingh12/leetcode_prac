@@ -24,3 +24,26 @@ Input: nums = [1]
 
 Output: 1
 """
+from typing import List
+
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        # Initialize an empty dictionary to count occurrences of each number
+        dic_ls = {}
+
+        # Convert the input list to a set to get unique elements
+        # Then initialize each unique number's count to 0 in the dictionary
+        for i in list(set(nums)):
+            dic_ls[i] = 0
+
+        # Loop through the original list and increment the count for each number
+        for i in nums:
+            if i in dic_ls:
+                dic_ls[i] += 1
+
+        # After counting, loop through the dictionary to find the number that occurred exactly once
+        for i, j in dic_ls.items():
+            if j == 1:
+                return i  # This is the number that appears only once
+
+        
