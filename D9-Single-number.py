@@ -47,3 +47,28 @@ class Solution:
                 return i  # This is the number that appears only once
 
         
+
+## New Concept 
+## XOR
+
+class Solution(object):
+    def singleNumber(self, nums):
+        # Initialize a variable to hold the result of XOR operations.
+        # We start with 0 because XOR with 0 returns the number itself: 0 ^ a = a
+        uniqNum = 0
+
+        # Traverse each number in the list
+        for idx in nums:
+            # Apply XOR between the current result and the current number.
+            # Here's why XOR works for this problem:
+            # - XOR of a number with itself is 0 → a ^ a = 0
+            # - XOR of a number with 0 is the number itself → a ^ 0 = a
+            # - XOR is both commutative and associative, so the order doesn't matter
+
+            # In a list where every number appears exactly twice except one,
+            # all the duplicates cancel out: a ^ a = 0
+            # What remains is: 0 ^ unique_number = unique_number
+            uniqNum ^= idx
+
+        # After the loop, uniqNum will hold the number that appears only once
+        return uniqNum
