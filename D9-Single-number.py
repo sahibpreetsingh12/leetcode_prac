@@ -23,6 +23,8 @@ Example 3:
 Input: nums = [1]
 
 Output: 1
+
+Leetcode - https://leetcode.com/problems/single-number/description/
 """
 from typing import List
 
