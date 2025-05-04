@@ -39,6 +39,16 @@ leetcode -  https://leetcode.com/problems/valid-parentheses/description/
 """
 Concepts learned
 
+Sure! Here's a brief version you can copy and paste:
+
+---
+
+### ✅ Key Concepts Learned
+
+* Stack usage for matching open/close brackets using LIFO logic (`append` and `pop`).
+* Validation pattern: Process input step-by-step, then check final state (e.g. empty stack).
+* Edge case optimization like checking odd-length strings early to short-circuit invalid inputs.
+
 """
 class Solution:
     def isValid(self, s: str) -> bool:
