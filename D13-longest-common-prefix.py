@@ -15,8 +15,10 @@ Input: strs = ["dog","racecar","car"]
 Output: ""
 Explanation: There is no common prefix among the input strings.
 
-"""
+Leetcode -  https://leetcode.com/problems/longest-common-prefix/
 
+"""
+from typing import List
 
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
