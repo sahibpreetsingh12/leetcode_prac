@@ -19,7 +19,7 @@ https://leetcode.com/problems/pascals-triangle/
 from typing import List
 
 """
-My own solution
+My own solution is down below
 """
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
