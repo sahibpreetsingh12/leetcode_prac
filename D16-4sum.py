@@ -18,7 +18,10 @@ Input: nums = [2,2,2,2,2], target = 8
 Output: [[2,2,2,2]]
 
 Leetcode -  https://leetcode.com/problems/4sum/
+
 """
+
+from typing import List
 class Solution:         
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
         nums.sort()
