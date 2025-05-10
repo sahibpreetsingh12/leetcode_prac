@@ -48,8 +48,8 @@ class Solution:
             # Calculate potential profit if we sold on the current day
             margin = prices[i] - min_price
 
-            # If we find a new lower price, update min_price
-            # (as if we found a better day to buy)
+            # If we find a new lower price, update min_price (as if we found a better day to buy)
+             
             if prices[i] < min_price:
                 min_price = prices[i]
 
