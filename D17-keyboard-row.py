@@ -23,6 +23,7 @@ class Solution:
         else:
             return "row3"
 
+
     def findWords(self, words: List[str]) -> List[str]:
         result = []
 
