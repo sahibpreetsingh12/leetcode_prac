@@ -20,6 +20,17 @@ Leetcode - https://leetcode.com/problems/subarray-sum-equals-k/
 
 # brute force solution
 """
+
+# Explanation: The brute force solution iterates through all possible subarrays and checks if their sum equals k.
+# This approach has a time complexity of O(n^3) and a space complexity of O(1).
+# Approach:
+# 1. Initialize an empty list to store the subarrays.
+# 2. Iterate through the array with two nested loops:
+#    - The outer loop iterates through the start index of the subarray.
+#    - The inner loop iterates through the end index of the subarray.
+# 3. For each subarray, check if the sum equals k.
+# 4. If it does, append the subarray to the list.
+from typing import List
 from collections import defaultdict
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
