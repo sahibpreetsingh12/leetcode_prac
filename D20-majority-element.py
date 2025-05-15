@@ -24,6 +24,7 @@ from typing import List
 # This works because the majority element appears more than half the time, so it will always be the last candidate standing.
 # Approach:
 
+
 # 1. Initialize a candidate variable and a count variable.
 # 2. Iterate through the array:
 #    - If the count is zero, set the current element as the candidate and set count to 1.
