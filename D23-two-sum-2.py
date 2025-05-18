@@ -29,6 +29,14 @@ Leetcode - https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 """
 from typing import List
 class Solution:
+    # Approach: Two Pointers    
+    # 1. Initialize two pointers, i and j, at the start and end of the array.
+    # 2. While i is less than j:
+    #    - If the sum of numbers[i] and numbers[j] is less than the target, increment i.
+    #    - If the sum is greater than the target, decrement j.  
+    #    - If the sum is equal to the target, return the indices [i + 1, j + 1].
+    # 3. The loop continues until the correct indices are found.
+    # 4. The time complexity is O(n) and the space complexity is O(1).
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         i, j = 0, len(numbers) - 1
         while True:   
