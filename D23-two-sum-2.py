@@ -27,6 +27,7 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
 
 Leetcode - https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 """
+from typing import List
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         i, j = 0, len(numbers) - 1
