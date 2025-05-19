@@ -19,6 +19,7 @@ Leetcode - https://leetcode.com/problems/maximum-average-subarray-i/
 """
 
 
+
 """
 Why this works
 1. You’re looking for the maximum average of a contiguous subarray of length k.
