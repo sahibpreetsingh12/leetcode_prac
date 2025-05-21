@@ -12,7 +12,26 @@ Each range [a,b] in the list should be output as:
 Leetcode - https://leetcode.com/problems/summary-ranges/
 """
 from typing import List
+"""
+Why this works
+1. You’re looking for ranges of consecutive integers in a sorted array. 
+2. A range is defined as a start and end point, where the end point is the last number in the consecutive sequence.
+3. You can iterate through the array and check if the current number is consecutive to the previous one.
+4. If it is, you continue; if not, you close out the current range and start a new one.
+5. At the end of the iteration, you need to close out the last range.
+6. You can use a list to store the ranges in the required format.
 
+Approach
+1. Initialize an empty list to store the ranges.
+2. If the input list is empty, return an empty list.
+3. Set the start and previous variables to the first element of the list.
+4. Iterate through the list starting from the second element.   
+5. For each element, check if it is consecutive to the previous one.
+6. If it is, update the previous variable.
+7. If it is not, close out the current range and start a new one.
+8. After the loop, close out the last range.
+9. Return the list of ranges.
+"""
 class Solution:
     def summaryRanges(self, nums: List[int]) -> List[str]:
         # If the list is empty, return an empty list
