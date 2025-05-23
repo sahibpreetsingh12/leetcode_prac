@@ -13,7 +13,6 @@ Leetcode - https://leetcode.com/problems/summary-ranges/
 """
 from typing import List
 """
-
 Why this works
 1. You’re looking for ranges of consecutive integers in a sorted array. 
 2. A range is defined as a start and end point, where the end point is the last number in the consecutive sequence.
