@@ -26,3 +26,14 @@ n = 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the
 Leetcode - https://leetcode.com/problems/missing-number/
 
 """
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        # Calculate the sum of all numbers in the input array
+        sum1 = sum(nums)
+        
+        # Create a range from 0 to n (length of nums + 1) and compute its sum
+        # This represents the expected sum if no number was missing
+        sum2 = sum([i for i in range(len(nums)+1)])
+        
+        # The missing number is the difference between the expected sum (sum2) and actual sum (sum1)
+        return sum2 - sum1
