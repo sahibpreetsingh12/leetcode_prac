@@ -26,6 +26,7 @@ n = 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the
 Leetcode - https://leetcode.com/problems/missing-number/
 
 """
+from typing import List
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         # Calculate the sum of all numbers in the input array
