@@ -38,3 +38,4 @@ class Solution:
         
         # The missing number is the difference between the expected sum (sum2) and actual sum (sum1)
         return sum2 - sum1
+    
