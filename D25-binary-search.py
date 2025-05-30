@@ -50,6 +50,7 @@ Let's take an example:
 10. The start pointer (1) is the correct insertion point for target (2) in the sorted array [1, 3, 5, 6].
 
 """
+
 from typing import List
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
