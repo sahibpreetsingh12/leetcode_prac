@@ -1,0 +1,2 @@
+SELECT user_id,stars FROM reviews where stars =3 ;
+# https://datalemur.com/questions/sql-where-practice-exercise

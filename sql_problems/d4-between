@@ -1,0 +1,3 @@
+SELECT manufacturer,drug,units_sold FROM pharmacy_sales where units_sold between 100000 and 105000 and (manufacturer = 'Biogen' OR manufacturer = 'AbbVie' OR manufacturer = 'Eli Lilly');
+
+https://datalemur.com/questions/sql-between-practice-exercise

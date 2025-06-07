@@ -1,0 +1,2 @@
+SELECT manufacturer,drug,units_sold FROM pharmacy_sales where manufacturer in ('Roche', 'Bayer', 'AstraZeneca') and units_sold not between 55000 and 550000;
+https://datalemur.com/questions/sql-in-practice-exercise
