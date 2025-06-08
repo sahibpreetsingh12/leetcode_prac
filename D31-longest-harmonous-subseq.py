@@ -51,3 +51,15 @@ class Solution:
             if num + 1 in count_map:
                 result = max(count + count_map[num + 1], result)
         return result
+"""
+# Approach:
+1. Initialize a variable `result` to 0 to keep track of the maximum length of harmonious subsequence found.
+2. Create a dictionary `count_map` to store the frequency of each number in the input array `nums`.
+3. Iterate through each number in `nums`:
+   - If the number is not already in `count_map`, add it with a count of 1.
+   - If it is already present, increment its count.
+4. Iterate through each key-value pair in `count_map`:
+   - For each number `num`, check if `num + 1` exists in `count_map`.
+   - If it does, calculate the length of the harmonious subsequence formed by `num` and `num + 1` as `count + count_map[num + 1]`.
+   - Update `result` to be the maximum of its current value and the calculated length.
+5. Finally, return `result`, which contains the length of the longest harmonious subsequence found."""
