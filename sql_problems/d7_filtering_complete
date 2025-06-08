@@ -1,0 +1,8 @@
+SELECT * FROM customers 
+where age between 18 and 22 AND
+state in ('Victoria', 'Tasmania', 'Queensland') and 
+gender in ('Male','Female') and 
+(customer_name like 'A%' or customer_name like 'B%');
+
+
+# https://datalemur.com/questions/sql-filtering-practice-exercise-1

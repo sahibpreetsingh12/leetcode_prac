@@ -1,0 +1,3 @@
+SELECT * FROM customers where customer_name like '_ee%' LIMIT 20;
+
+# https://datalemur.com/questions/sql-like-_-practice-exercise
