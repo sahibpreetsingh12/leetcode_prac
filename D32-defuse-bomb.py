@@ -52,4 +52,13 @@ class Solution:
             return res
 
 
+"""
+Approach:
+1. Create a new list `new_code` that is three times the length of the original `code` to handle circular indexing easily.
+2. Check if `k` is zero, in which case return a list of zeros of the same length as `code`.         
+3. If `k` is positive, iterate through the indices of `new_code` from `length` to `2*length`, summing the next `k` elements for each index and appending the result to a list.
+4. If `k` is negative, iterate through the indices of `new_code` from `length` to `2*length`, summing the previous `k` elements for each index and appending the result to a list.
+5. Return the resulting list as the decrypted code.
+"""
+
     
