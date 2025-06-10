@@ -26,7 +26,6 @@ Output: [1,0]
 Explanation: The array represents the integer 9.
 Incrementing by one gives 9 + 1 = 10.
 Thus, the result should be [1,0].
-
 https://leetcode.com/problems/plus-one/
 """
 from typing import List
