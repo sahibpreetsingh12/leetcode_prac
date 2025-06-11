@@ -1,0 +1,3 @@
+SELECT max(open) FROM stock_prices where ticker = 'NFLX';
+
+# https://datalemur.com/questions/sql-max-practice-exercise
