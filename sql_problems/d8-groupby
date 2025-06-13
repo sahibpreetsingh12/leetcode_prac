@@ -1,3 +1,10 @@
 SELECT ticker,min(open) as min FROM stock_prices group by ticker order by min desc;
 
 # https://datalemur.com/questions/sql-group-by-practice-exercise-easy
+
+
+SELECT skill, COUNT(candidate_id) FROM candidates
+GROUP BY skill
+ORDER BY count DESC;
+
+# https://datalemur.com/questions/sql-group-by-practice-exercise-candidate-skills
