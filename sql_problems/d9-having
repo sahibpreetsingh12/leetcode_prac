@@ -1,0 +1,26 @@
+SELECT ticker,min(open) FROM stock_prices group by ticker having min(open)>100;
+
+# The difference between WHERE vs. HAVING is a common conceptual SQL interview question, so we figured 
+# we'd cover it a bit more explicitly: WHERE filters on values in individual rows, versus HAVING filters 
+# values aggregated from groups of rows.
+
+
+SELECT candidate_id FROM candidates group by candidate_id having count(candidate_id) > 2;
+
+# https://datalemur.com/questions/sql-having-practice-exercise
+
+
+
+SELECT candidate_id FROM candidates group by candidate_id having count(candidate_id) > 2;
+
+https://datalemur.com/questions/sql-having-practice-exercise
+
+
+SELECT candidate_id
+FROM candidates
+WHERE skill IN ('Python', 'Tableau', 'PostgreSQL')
+GROUP BY candidate_id
+HAVING COUNT(skill) = 3
+ORDER BY candidate_id;
+
+# https://datalemur.com/questions/matching-skills
