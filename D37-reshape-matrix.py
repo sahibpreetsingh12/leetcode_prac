@@ -35,7 +35,7 @@ class Solution:
             
             return ks  # Return the reshaped matrix
         else:
-            return mat  # Return the original matrix if reshaping isn't possible
+            return mat  # Return the original matrix if reshaping isn't possibl
 
 """
 Approach:
