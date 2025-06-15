@@ -14,4 +14,4 @@ SELECT category, count(DISTINCT product) FROM product_spend group by category;
 
 # https://datalemur.com/questions/sql-count-distinct-practice-exercise
 
-# Important bit is DISTINCT comes inside the count function, not outside it.
+# Important bit is DISTINCT comes inside the count function, not outside it
