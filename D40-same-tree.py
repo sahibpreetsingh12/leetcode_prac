@@ -1,9 +1,23 @@
+"""
+Same tree 
+Approach:
+1. Use a queue to perform a level-order traversal of both trees simultaneously.
+2. Start by adding the root nodes of both trees to the queue.
+3. While the queue is not empty, pop a pair of nodes (one from each tree) from the queue.
+4. If both nodes are None, continue to the next iteration (they match).
+5. If one node is None and the other is not, or if their values are different, return False (the trees do not match).
+6. If both nodes are not None and their values match, add their left children as a pair to the queue and their right children as a pair to the queue.
+7. If the queue is empty and all pairs matched, return True (the trees are the same).
+
+Leetcode Link: https://leetcode.com/problems/same-tree/
+"""
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+from typing import Optional
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 from collections import deque
 
 class Solution:
