@@ -18,7 +18,6 @@ class TreeNode:
         self.left = left
         self.right = right
 
-
 class Solution:
     def getMinimumDifference(self, root: Optional[TreeNode]) -> int:
         # Helper function to collect all node values from the tree
